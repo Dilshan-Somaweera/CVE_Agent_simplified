@@ -337,21 +337,44 @@ async def main():
     # Preload E5 model at startup
     initialize_e5_model()
     
-    # Get URLs from your list
+    # Get URLs from your list main
     urls = [
-    "https://security.snyk.io/vuln/SNYK-SLES150-SYSTEMUSERROOT-2752907",
-    "https://stackoverflow.com/questions/38030116/is-alpine-linux-an-implementation-of-a-unikernel/60532451#60532451",
-    "https://security.snyk.io/vuln/SNYK-ALPINE321-NGINX-8484840",
-    "https://security.snyk.io/vuln/SNYK-ALPINE321-NGINX-8484898",
-    "https://security.snyk.io/vuln/SNYK-ALPINE321-NGINX-8484847",
-    "https://security.snyk.io/vuln/SNYK-ALPINE321-NGINX-8484822",
-    "https://security.snyk.io/vuln/SNYK-ALPINE321-XZ-8487516",
-    "https://stackoverflow.com/questions/28229095/apache-commons-compress-using-7zip/28277555#28277555",
-    "https://security.snyk.io/vuln/SNYK-ALPINE321-OPENSSL-8485258",
-    "https://stackoverflow.com/questions/76806358/cannot-scan-a-local-unpushed-image-for-cves-with-anchore-grype-workarounds/76806506#76806506",
-    "https://security.snyk.io/vuln/SNYK-ORACLE9-NGINXALLMODULES-9564022",
-    "https://security.snyk.io/vuln/SNYK-ALPINE321-OPENSSH-8485234"
-    ]
+    "https://security.snyk.io/vuln/SNYK-CHAINGUARDLATEST-PYPYBOOTSTRAP-9005470",
+    "https://security.snyk.io/vuln/SNYK-UBUNTU1604-PYTHONPIP-3180908",
+    "https://security.snyk.io/vuln/SNYK-UBUNTU1604-PYTHONPIP-10286107",
+    "https://security.snyk.io/vuln/SNYK-CENTOS10-PYTHONSETUPTOOLS-10350786",
+    "https://security.snyk.io/vuln/SNYK-ALPINE322-ZLIBNG-10283913",
+    "https://security.snyk.io/vuln/SNYK-UNMANAGED-UTILLINUX-2334960",
+    "https://security.snyk.io/vuln/SNYK-ALPINE322-UTILLINUX-10280294",
+    "https://security.snyk.io/vuln/SNYK-UBUNTU2504-COREUTILS-9827293",
+    "https://security.snyk.io/vuln/SNYK-ORACLE7-E2FSPROGSLIBS-8162640",
+    "https://security.snyk.io/vuln/SNYK-CHAINGUARDLATEST-GCC6-9510055",
+    "https://security.snyk.io/vuln/SNYK-ALMALINUX8-GNUPG2SMIME-5635646",
+    "https://security.snyk.io/vuln/SNYK-AMZN201803-GNUPG2-9904730",
+    "https://security.snyk.io/vuln/SNYK-ALPINE322-GNUPG-10277120",
+    "https://security.snyk.io/vuln/SNYK-ALPINE322-BZIP2-10276311",
+    "https://security.snyk.io/vuln/SNYK-ALPINE322-SQLITE-10279988",
+    "https://security.snyk.io/vuln/SNYK-UNMANAGED-LINUXAUDIT-2382091",
+    "https://security.snyk.io/vuln/SNYK-CONAN-BINUTILS-10075327",
+    "https://security.snyk.io/vuln/SNYK-ALPINE322-BIND-10276184",
+    "https://security.snyk.io/vuln/SNYK-CENTOS9-BZIP2LIBS-8866207",
+    "https://security.snyk.io/vuln/SNYK-CENTOS10-COREUTILS-10296080",
+    "https://security.snyk.io/vuln/SNYK-CENTOS10-BIND-10299781",
+    "https://security.snyk.io/vuln/SNYK-CONAN-ELFUTILS-10075558",
+    "https://security.snyk.io/vuln/SNYK-CENTOS7-BINUTILS-1985054",
+    "https://security.snyk.io/vuln/SNYK-ALPINE322-RUST-10279659",
+    "https://security.snyk.io/vuln/SNYK-CONAN-BINUTILS-10075178",
+    "https://security.snyk.io/vuln/SNYK-CENTOS8-MINGW64BINUTILS-1940206",
+    "https://security.snyk.io/vuln/SNYK-SLES152-BINUTILSDEVEL-2699711",
+    "https://security.snyk.io/vuln/SNYK-SLES153-BINUTILSGOLD-2659238",
+    "https://security.snyk.io/vuln/SNYK-CENTOS6-LIBCURL-1953502",
+    "https://security.snyk.io/vuln/SNYK-AMZN2-GAWKDEBUGINFO-6098498",
+    "https://security.snyk.io/vuln/SNYK-CONAN-LIBCURL-10076436",
+    "https://security.snyk.io/vuln/SNYK-CONAN-ELFUTILS-10075543",
+    "https://security.snyk.io/vuln/SNYK-ALPINE322-CYRUSSASL-10276677"
+]
+
+
 
 
     # Load checkpoint if it exists
